@@ -8,10 +8,38 @@ body{
 
 .head1{
   background-color:black;
+  height:80px;
+  
+
 }
 
 .head2{
   color:white;
-  font-size:20px;
+  font-size:28px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-left:20px;
+  
+
+
 }
+.img1{width:300px;
+margin:30px;}
+
+.navbar{
+  width:200px;
+  background-color:#21222A;
+  margin-bottom:0px;
+  height:700px;
+}
+
+
+ ul li {
+  font-size: 24px;
+  color:white;
+  margin:10px;
+ }
+
+ .main{
+  display:flex;
+
+ }

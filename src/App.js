@@ -1,13 +1,17 @@
-import logo from './logo.svg';
+
 import './App.css';
 import Navbar from './ChoonesJS/Navbar';
-import HeaderChoones from './ChoonesJS/HeaderChoones'
+import HeaderChoones from './ChoonesJS/HeaderChoones';
+import Musicboard from './ChoonesJS/Musicboard';
 
 function App() {
   return (
     <div className="App">
       <HeaderChoones/>
-      <Navbar/>
+      <div className='main'> 
+        <Navbar/>
+        <Musicboard/>
+      </div>
     </div>
   );
 }

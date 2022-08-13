@@ -8,3 +8,4 @@ const HeaderChoones=()=>{
 
     );
 }
+export default HeaderChoones;
