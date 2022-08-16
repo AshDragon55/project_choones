@@ -6,12 +6,31 @@ body{
   background-image:linear-gradient(to right, red,blue);
 }
 
-.head1{
-  background-color:black;
-  height:80px;
-  
-
+.searchbar{
+  height:50px;
+  width:50%;
+  margin:20px;
 }
+
+.box{
+  display: block;
+  margin:auto;
+  
+}
+
+.head1{
+  display:flex;
+  background-color:black;
+
+  height:80px;
+}
+.text-gradient{
+  font-size:50px;
+  background:linear-gradient(blue,red) ;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 
 .head2{
   color:white;
@@ -27,10 +46,37 @@ margin:30px;}
 
 .navbar{
   width:200px;
+  
   background-color:#21222A;
   margin-bottom:0px;
-  height:700px;
+  
 }
+ 
+.logo-img{
+  width:40px;
+  height:40px;
+  margin-right:10px;
+  margin-left:10px;
+  margin-top:15px;
+}
+
+.search{
+  height:40px;
+  width:80px;
+  color:blue;
+  border:1px solid black;
+}
+
+.avatar-img{
+  width:50px;
+  height:50px;
+  margin-right:10px;
+  margin-left:950px;
+  margin-top:15px;
+
+}
+
+
 
 
  ul li {
@@ -38,6 +84,14 @@ margin:30px;}
   color:white;
   margin:10px;
  }
+
+
+ a:link,a:visited{
+  font: size 24px;
+    color:white;
+  margin:10px;
+  text-decoration: none;
+}
 
  .main{
   display:flex;
