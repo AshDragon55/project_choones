@@ -1,38 +1,50 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+#profilePage {
+  display: grid;
+  width: 95%;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  grid-template-columns: 25% 70%;
+}
+
+#profilePageRight {
+  display: grid;
+  width: inherit;
+  justify-content: center;
+  justify-items: center;
+}
+
+#profilePageLeft {
+  width: inherit;
+  justify-content: center;
+}
+
+.profileGrid {
+  display: grid;
+  grid-template-columns: 10vw 10vw 10vw 10vw;
+  justify-content: space-between;
+  padding: 0;
+  border: 1px solid;
+  justify-items: center ;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.App {
+  background-color: black;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.uploadButtons {
+  background-color: #00000000;
+  color: white;
+  transition: 200ms;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#uploadPicture:hover {
+  color: rgb(67, 171, 255);
+}
+
+#profileReset:hover {
+  color: rgb(240, 114, 92);
 }
