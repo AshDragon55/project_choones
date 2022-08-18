@@ -1,12 +1,62 @@
 import React from "react";
+import { useState } from "react";
 
 function Profile() {
+  const defaultImg1 = require("../images/3518.png");
+  const defaultImg2 = require("../images/sad.png");
+  const defaultImg3 = require("../images/anxious.png");
+  const defaultImg4 = require("../images/smile.png");
+  
+
+  const [profilePicture, setprofilePicture] = useState(defaultImg1);
+  const [uploadedImg, setuploadedImg] = useState(null)
+
+  const [count, setCount] = useState(0)
+ 
+  const randomPhoto = () => {
+    
+    setCount(count+1);
+   
+    if ((count=="0")) {
+      setprofilePicture(defaultImg2);
+    } else if ((count=="1")) {
+      setprofilePicture(defaultImg3);
+    } else if ((count=="2")) {
+      setprofilePicture(defaultImg4);
+    } else if ((count=="3")) {
+      setprofilePicture(defaultImg1);
+      setCount(0);
+    }
+  };
+
+  const uploadPhoto = () => {
+    //(event) => {setuploadedImg(event.target.files[0])}
+  }
+
   return (
     <div id="profilePage">
       <div id="profilePageLeft">
-        <img src={"./public/logo512.png"} id="profilePhoto"  /> <br/>
-        <button id="uploadPicture" className="uploadButtons">Change Profile Picture</button> <br/>
-        <button id="profileReset" className="uploadButtons">Reset Account Stats</button>
+        <img
+          src={profilePicture}
+          id="profilePhoto"
+          alt="A man sad over fallen pizza"
+        />{" "}
+        <br />
+        <button
+          id="randomPicture"
+          className="uploadButtons"
+          onClick={randomPhoto}
+        >
+          Random Profile Picture
+        </button>
+        <br />
+        <button id="uploadPicture" className="uploadButtons" onclick={uploadPhoto}>
+          Upload Profile Picture
+        </button>{" "}
+        <br />
+        <button id="profileReset" className="uploadButtons">
+          Reset Account Stats
+        </button>
       </div>
 
       <div id="profilePageRight">

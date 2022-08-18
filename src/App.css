@@ -60,3 +60,7 @@ ul li {
 #profileReset:hover {
   color: rgb(240, 114, 92);
 }
+
+#randomPicture:hover {
+  color:rgb(59, 241, 166)
+}
