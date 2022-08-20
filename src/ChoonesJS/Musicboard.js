@@ -23,7 +23,7 @@ const Musicboard=() =>{
       body:'grant_type=client_credentials&client_id=' + CLIENT_ID + '&client_secret='+ CLIENT_SECRET
     }
     fetch('https://accounts.spotify.com/api/token',authParameters)
-    .then(result=>result.json())
+    .then(result => result.json())
     .then(data=>setAccessToken(data.access_token))
   },[]);
 
@@ -45,7 +45,7 @@ const Musicboard=() =>{
   
   
   console.log('Artist ID is ' +artistID)
-  var returnedAlbums =await fetch('https://api.spotify.com/v1/artists/'+artistID+'/albums'+'?include_groups=album&market=US&limit=50')
+  var returnedAlbums =await fetch('https://api.spotify.com/v1/artists/'+ artistID +'/albums'+'?include_groups=album&market=US&limit=50')
      .then(response =>response.json())
      .then(data =>{
       console.log(data);
@@ -63,7 +63,7 @@ const Musicboard=() =>{
             <input className='searchbar' type='search' placeholder='   What is your Mood today?'
             onKeyPress={e=>{
                 if (e.key=='Enter'){
-                    searchInput();
+                    setSearchInput();
                 }
             }}
             onChange={e =>setSearchInput(e.target.value)}/>
