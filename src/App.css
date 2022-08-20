@@ -121,3 +121,186 @@ body{
     display:flex;
   
    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   #profilePage {
+    display: grid;
+    width: 95%;
+    justify-content: center;
+    grid-template-columns: 25% 70%;
+    padding: 30px;
+  }
+  
+  #profilePageRight {
+    display: grid;
+    width: inherit;
+    justify-content: center;
+    justify-items: center;
+  }
+  
+  #profilePageLeft {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  .profileGrid {
+    display: grid;
+    grid-template-columns: 10vw 10vw 10vw 10vw;
+    justify-content: space-between;
+    padding: 0;
+    justify-items: center ;
+  }
+  
+  .profileText{
+    padding-top: 10px;
+  }
+  
+  #profilePhoto{
+    width: 250px;
+    height: 250px;
+    border-radius: 200px;
+  }
+  
+  ul li {
+    list-style-type: none;
+  }
+  
+  .App {
+    background-color: black;
+    color: white;
+  }
+  
+  .uploadButtons {
+    background-color: #00000000;
+    color: white;
+    transition: 200ms;
+  }
+  
+  #uploadPicture:hover {
+    color: rgb(67, 171, 255);
+  }
+  
+  #profileReset:hover {
+    color: rgb(240, 114, 92);
+  }
+  
+  #randomPicture:hover {
+    color:rgb(59, 241, 166)
+  }

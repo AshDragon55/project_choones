@@ -40,7 +40,7 @@ function Profile() {
           src={profilePicture}
           id="profilePhoto"
           alt="A man sad over fallen pizza"
-        />{" "}
+        />
         <br />
         <button
           id="randomPicture"
@@ -50,10 +50,7 @@ function Profile() {
           Random Profile Picture
         </button>
         <br />
-        <button id="uploadPicture" className="uploadButtons" onclick={uploadPhoto}>
-          Upload Profile Picture
-        </button>{" "}
-        <br />
+      
         <button id="profileReset" className="uploadButtons">
           Reset Account Stats
         </button>
