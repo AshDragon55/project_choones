@@ -1,6 +1,6 @@
 import './Moodspage.css';
 
-function App() {
+function Moods() {
 
   return (
 <>
@@ -90,13 +90,14 @@ function App() {
    
         <input type="submit" className="btn" value="Submit" id="btnSubmit">
   
-    <script type="text/javascript">
-        
-        function CountChecks(whichlist,maxchecked,latestcheck) {
+    
+ {/*        
+ function CountChecks(whichlist,maxchecked,latestcheck) {
+   var listone = new Array("happy", "sad", "angry", "love", "heartbroken", "fear", "peace", "greived","disgust");
 
-        var listone = new Array("happy", "sad", "angry", "love", "heartbroken", "fear", "peace", "greived","disgust");
-
-        var iterationlist;
+   var iterationlist;
+   return(
+   
 eval("iterationlist="+whichlist);
 var count = 0;
 for( var i=0; i<iterationlist.length; i++ ) {
@@ -106,10 +107,10 @@ for( var i=0; i<iterationlist.length; i++ ) {
 if( count > maxchecked ) {
    alert("Sorry, only ' + maxchecked + ' may be checked.");
    }
-
+   )
         function isChecked(count, btnSubmit) {
     var button = document.getElementById(btnSubmit);
-
+  
     if (count==maxchecked) {
         button.disabled = false;
     } else {
@@ -117,8 +118,8 @@ if( count > maxchecked ) {
         alert("Sorry, 3 options must be selected.");
     }
 }
-        }
-a word
+ */}        
+ }
 
-  export default App;
+  export default Moods;
 
