@@ -13,33 +13,21 @@ export const SidebarData = [
     cName: 'nav-text'
   },
   {
-    title: 'Moods',
-    path: '/moods',
+    title: 'Search',
+    path: '/search',
     icon: <BsIcons.BsEmojiExpressionlessFill />,
     cName: 'nav-text'
   },
   {
-    title: 'Playing',
+    title: 'Now Playing',
     path: '/playing',
     icon: <BsIcons.BsFillPlayFill />,
     cName: 'nav-text'
   },
   {
-    title: 'Team',
-    path: '/team',
+    title: 'Profile',
+    path: '/profile',
     icon: <IoIcons.IoMdPeople />,
-    cName: 'nav-text'
-  },
-  {
-    title: 'Messages',
-    path: '/messages',
-    icon: <FaIcons.FaEnvelopeOpenText />,
-    cName: 'nav-text'
-  },
-  {
-    title: 'Support',
-    path: '/support',
-    icon: <IoIcons.IoMdHelpCircle />,
     cName: 'nav-text'
   }
 ];

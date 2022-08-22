@@ -2,10 +2,10 @@ import React from "react";
 import { useState } from "react";
 
 function Profile() {
-  const defaultImg1 = require("../images/3518.png");
-  const defaultImg2 = require("../images/sad.png");
-  const defaultImg3 = require("../images/anxious.png");
-  const defaultImg4 = require("../images/smile.png");
+  const defaultImg1 = require("../profile_images/3518.png");
+  const defaultImg2 = require("../profile_images/sad.png");
+  const defaultImg3 = require("../profile_images/anxious.png");
+  const defaultImg4 = require("../profile_images/smile.png");
   
 
   const [profilePicture, setprofilePicture] = useState(defaultImg1);
@@ -40,7 +40,7 @@ function Profile() {
           src={profilePicture}
           id="profilePhoto"
           alt="A man sad over fallen pizza"
-        />{" "}
+        />
         <br />
         <button
           id="randomPicture"
@@ -50,10 +50,7 @@ function Profile() {
           Random Profile Picture
         </button>
         <br />
-        <button id="uploadPicture" className="uploadButtons" onclick={uploadPhoto}>
-          Upload Profile Picture
-        </button>{" "}
-        <br />
+      
         <button id="profileReset" className="uploadButtons">
           Reset Account Stats
         </button>
